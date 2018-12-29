@@ -2,10 +2,10 @@
 <html lang='en'>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="author" content="Malvern Madondo"/>
-        <meta name="description" content="My personal portfolio featuring projects, events, activities and other random stuff."/>
         <title>Malvern Madondo</title>
+        <meta name="description" content="Malvern Madondo is a Computer Science and Mathematics student based in Minnesota, USA." />
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -34,19 +34,33 @@
 
                 <!--Navigation Links-->
                 <div id="topnav">
+                    <div class="flex-container">
+  <div class="row">
+    <span class="flex-item">1</span>
+  </div>
+  <div class="row">
+    <span class="flex-item">2</span>
+  </div>
+</div>
+            <div class="article-content">
+              <div class="row">
+                  <div class="row text-center">
+                      <span><i class="fa fa-line-chart"></i> Recent Activity</span>
+                    <marquee behavior="scroll" direction="left"  scrollamount="5"><p style= "font-size: 12px">&copy;2018. Designed with <i class = "fa fa-heart" style="color: red"></i> by Malvern Madondo. </p></marquee>
+                </div>
+            </div>
+            </div>
                     <ul>
-                        <li class="active"><i class="fa fa-home" aria-hidden="true"></i> <a href="http://student.css.edu/CodeDuluth/Malvern/index.html" target="_self">Home</a></li>
-                        <li><i class="fa fa-address-book" aria-hidden="true"></i> <a href="http://student.css.edu/CodeDuluth/Malvern/contact.html" target="_blank"> Contact Me</a></li>
-                        <li><i class="fa fa-linkedin" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/malvernmadondo" target="_blank">LinkedIn</a></li>
-                        <li><i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/mmadondo" target="_blank">GitHub</a></li>
-                        <li><i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/malvernmadondo" target="_blank">Twitter</a></li>
-                    
+                        <li class="active"><i class="fa fa-home" aria-hidden="true"></i> <a href="http://student.css.edu/CodeDuluth/Malvern/index.html" target="_self">home</a></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:mmadondo@css.edu">email</a></li>
+                        <li><i class="fa fa-linkedin" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/malvernmadondo" target="_blank">linkedin</a></li>
+                        <li><i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/mmadondo" target="_blank">github</a></li>
+                        <li><i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/malvernmadondo" target="_blank">twitter</a></li>
                     </ul>
                 </div>
             </header>
 
             <article class="article-content">
-
                 <img class="profile_pic" src="images/malmad_twitter_prof.jpg" width="300">
                 <p id="bio">I am a senior at the College of St. Scholastica in Duluth, MN. I study Computer Information Systems and Mathematics.<br>This is a work-in-progress for my portfolio.</p> <!--endOf intro-->
                 <hr>
@@ -55,14 +69,13 @@
 
             </article>
 
-            <!--Week 1 stuff here-->
             <button class="accordion" style="text-align: center">Highlights</button>
                 <div class="panel">
                     <p style="font-style: italic">"The biggest room in the world is room for improvement." - Unknown</p>
                     <h4>Some of the higlights</h4>
                         <p>Coming soon... To read about side projects, visit <a href="http://99u.com/articles/17297/make-your-side-projects-wildly-succesful-treat-them-as-experiments?utm_source=zapier.com&utm_medium=referral&utm_campaign=zapier" target="_blank">this site</a> or <a href="http://ihavesomanyideas.com/4-steps-get-side-project-done-even-limited-time/" target="_blank"> this one</a></p>
 
-                </div> <!--endOf week 1-->
+                </div>
 
 
             <button class="accordion" style="text-align: center">Updates</button>
@@ -70,8 +83,6 @@
                     <p style="font-style: italic">"A Journey of a thousand miles begins with one step." - Lao Tzu</p>
                     <h4>Recent Releases</h4>
                         <p> Made a <a href="http://student.css.edu/CodeDuluth/Malvern/assignment2.html" target="_blank">Dateable Calculator</a> to find out if two people can date given ages. More to come!</p>
-
-                
                 </div>
 
             <button class="accordion" style="text-align: center">Projects</button>
@@ -79,7 +90,6 @@
                     <p style="font-style: italic">“Develop success from failures. Discouragement and failure are two of the surest stepping stones to success.” - Dale Carnegie</p>
                     <h4>Some of my work!</h4>
                         <p>I made a web-based <a href= "http://student.css.edu/CodeDuluth/Malvern/assignment3.html" target="_blank">To-Do List app</a>. More to come!</p>
-
                 </div>
 
             <button class="accordion" style="text-align: center">Resume</button>
@@ -87,7 +97,6 @@
                     <p style="font-style: italic">"Beware the barrenness of a busy life." - Socrates</p>
                     <h4>Work Experience </h4>
                         <p> Coming soon</p>
-
                 </div>
 
           
@@ -96,7 +105,6 @@
                 var panels = document.getElementsByClassName("panel");
                 var i;
                 var j;
-
                 var handleAccordionClick = function(){
                     for(j = 0; j < panels.length; j++){
                         acc[j].classList.remove("active");
