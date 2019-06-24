@@ -426,6 +426,7 @@ h2.section-title {
     display: inline-table;
     padding: .1em 0;
     font-weight: 600;
+    color: #E9BC3F;
 }
 
 ul.keywords,
@@ -809,4 +810,6 @@ ul.courses li:hover {
         display: block;
         opacity: 1 !important;
     }
+    
+    
 }
