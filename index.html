@@ -1,701 +1,100 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<!--Adapted from Cassidy Williams old and current website! https://cassidoo.co/-->
+<html lang="en">
   <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="author" content="Malvern Madondo"/>
-        <title>Malvern Madondo</title>
-        <meta name="description" content="Malvern Madondo is a Computer Science and Mathematics student based in Minnesota, USA." />
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Malvern Madondo</title>
+    <meta name="author" content="Malvern Madondo"/>
+    <meta
+      name="description"
+      content="Malvern Madondo is a Computer Science PhD student at Emory University."
+    />
+
+    <!-- Favicon/theme -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/img/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/img/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link rel="manifest" href="/img/manifest.json" />
+    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#24d05a" />
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <meta name="msapplication-config" content="/img/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body>
-
-  <div id="resume">
-    	<header id="header" class="clear">
-                <div id="topnav">
-                <h1 class="name">Malvern Madondo</h1>
-<!--
-                    <marquee direction="up" scrollamount="2" class="marq">Welcome to my page!!
-                    </marquee>
--->
-                    <ul>
-                        <li class="active"><i class="fa fa-home" aria-hidden="true"></i> <a href="http://student.css.edu/CodeDuluth/Malvern/index.html" target="_self">home</a></li>
-                        <li><i class="fa fa-linkedin" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/malvern" target="_blank">linkedin</a></li>
-                        <li><i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/mmadondo" target="_blank">github</a></li>
-                        <li><i class="fa fa-id-card-o" aria-hidden="true"></i> <a href="https://mmadondo.github.io/docs/2020_cv.pdf" target="_blank">vita</a></li>
-                        <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:madondomalvern@gmail.com">email</a></li>
-                    </ul>
-                    <!--div class="dark-mode-toggler">
-        <input type="checkbox" id="toggler">
+    <div class="container">
+      <div class="header-section">
+        <div class="header-frame">
+          <h1>Malvern Madondo</h1>
+          <h2>PhD Student at Emory</h2>
+            <div class="img-frame">
+              <img id="propic" src="./img/face1.jpg" alt="" />
+            </div>
+            </div>
+        </div>
+        <p style="text-align:center">
+           <a href="mailto:madondomalvern@gmail.com">email</a> &nbsp;/&nbsp;
+            <a href="https://mmadondo.github.io/docs/2020_cv.pdf" target="_blank">cv</a>&nbsp;/&nbsp;
+            <a href="https://www.linkedin.com/in/malvern" target="_blank">linkedin</a>&nbsp;/&nbsp;
+            <a href="https://github.com/mmadondo" target="_blank">github</a>&nbsp;/&nbsp;
+            <a href="https://scholar.google.com/citations?user=cHLscm8AAAAJ&hl=en">Google Scholar</a>
+          </p>
+        <p>I am a second year PhD student in the <a href="https://cs.emory.edu/home/">Computer Science and Informatics program</a> at Emory University in Atlanta, GA. Prior to Emory, I earned my B.S. in Computer Science/Information Systems and a B.A. in Mathematics from The College of Saint Scholastica in Duluth, MN,
+        </p>
+      <div class="dark-mode-toggler">
+        <input type="checkbox" id="toggler" />
         <label for="toggler" aria-label="Toggler for Dark Mode"></label>
-      </div-->
-                </div>
-    	</header>
-
-    	<section class="section main-summary">
-    		<section>
-    			<div><p style="color: #CACACC">A lot has happened over the past few years... enough to fill a book or two. On Mother's Day (May 12, 2019), I graduated with a <em style="color: #10A2F5">B.S. in Computer Science/Information Systems and a B.A. in Mathematics</em> from The College of Saint Scholastica in Duluth, Minnesota, US. I will be pursuing my doctoral degree in Computer Science &amp; Informatics at Emory University starting August 2019. This page captures some of my endeavors over the last decade.</p></div>
-
-    		</section>
-    	</section>
-
-      <section class="section">
+      </div>
+        
+    <section class="section">
         <header>
             <h2 class='section-title'>Changelog</h2>
         </header>
-
         <section class="changelog">
           <ul id="highlights">
-              <li class="school"><b style="color: aqua">(8/28/19)</b> First day of classes as a graduate student!</li>
-              <li class="school"><b style="color: red">(8/15/19)</b> First day of graduate orientation!</li>
-              <li class="event"><b style="color: chartreuse">(8/8/19)</b> After 4 years, I am leaving MN for warmer climes in Georgia! Doing a road trip from Duluth, MN to Atlanta, GA.</li>
-              <li class="event"><b style="color: #e9bc3f">(6/2/19 - 6/4/19)</b> Camped by Clearwater Lake in the BWCAW! Thanks to my advisor, Luther, for the opportunity!</li>
-              <li class="job"><b style="color: fuchsia">(5/9/19)</b> Last day at work with the amazing Interactive Services Team :( Blessed to have worked with Lori, Paul, Zhara, Cheryl, Maribeth, Jade, Jim, and Kate.</li>
+              <li class="award"><b style="color: fuchsia">(8/5/2020)</b> Selected Science ATL Communication Fellow!</li>
+             <li class="conference"><b style="color: red">(3/5/20)</b> In Austin, TX, for the CRA Grad Cohort Workshop for Underrepresented Minorities and Persons with Disabilities.</li>
+              <li class="school"><b style="color: deepskyblue">(8/28/19)</b> First day of classes as a graduate student!</li>
+              <li class="event"><b style="color: chartreuse">(8/8/19)</b> After 4 years, I am leaving MN for warmer climes in Georgia! My first solo road trip from Duluth, MN to Atlanta, GA!</li>
+              <li class="event"><b style="color: chartreuse">(6/2/19)</b> Camping by Clearwater Lake in the BWCAW for the next couple days! Thanks to my advisor, Luther, for the opportunity!</li>
               <li class="school"><b style="color: deepskyblue">(5/12/19)</b> Graduated! Blessed to have celebrated this momentous occasion with some family and friends!</li>
             </ul>
         </section>
       </section>
-
+            
     <section class="section">
-      <header>
-        <h2 class='section-title'>Education</h2>
-      </header>
-
-    <section id="education">
-        <section class="education-item">
-            <input id="education-item-0" type="checkbox" class="toggle-item" checked="checked" />
-            <label for="education-item-0"></label>
-          <header>
-            <div class="header-left">
-              <div class="area">
-                Graduate Studies
-              </div>
-              <div class="institution">
-                Emory University
-              </div>
-            </div>
-            <div class="date">
-              <span class="startDate">
-              2019
-              </span>
-              <span class="endDate">
-              - present
-              </span>
-            </div>
-          </header>
-        <div class="item">
-            <div class="summary" style="color: #EB4888">
-              <p><span style="color: bisque">"All we have to do is decide what to do with the time that is given to us"</span> ~ Gandalf to Frodo, in JRR Tolkien's masterpiece, Lord of the Rings. I decided to do a <span style="color: bisque">PhD in Computer Science and Informatics</span>. So here I am! Research interests lie in scientific computing (diff eqs meet machine learning) and computer science education (personalized learning tools).</p>
-            </div>
-          </div>
-          </section>
-        </section>
-
-      <section id="education">
-        <section class="education-item">
-            <input id="education-item-1" type="checkbox" class="toggle-item"/>
-            <label for="education-item-1"></label>
-          <header>
-            <div class="header-left">
-              <div class="area">
-                Undergraduate Studies
-              </div>
-              <div class="institution">
-                The College of Saint Scholastica
-              </div>
-            </div>
-            <div class="date">
-              <span class="startDate">
-              2015
-              </span>
-              <span class="endDate">
-              - 2019
-              </span>
-            </div>
-          </header>
-        <div class="item">
-            <div class="summary">
-                <p>Earned my B.S in Computer Science/Info Systems &amp; B.A. in Mathematics. <strong>Cumulative GPA: </strong>3.86/4.0. </p>
-              <p>Courses taken include:</p>
-            </div>
-          </div>
-          <ul class="courses">
-            <li>Machine Learning for Data Science</li>
-            <li>Computer Security</li>
-            <li>Behavioral Finance &amp; Economics </li>
-            <li>Artificial Intelligence with Robotics</li>
-            <li>Real Analysis</li>
-            <li>Abstract Algebra</li>
-            <li>Mobile Device Programming (Android)</li>
-            <li>Programming with Java I &amp; II</li>
-            <li>Computer Science Principles</li>
-            <li>Client-side Web Development</li>
-            <li>Software Design and Analysis</li>
-            <li>Project Management</li>
-            <li>Tech Ethics</li>
-            <li>Intro to Databases</li>
-            <li>Database Modeling</li>
-            <li>Data Structures &amp; Algoirthms</li>
-            <li>Management Communications: Written</li>
-            <li>Politics of Science in the US</li>
-            <li>Women &amp; Religion</li>
-            <li>History of Christian Thought</li>
-            <li>Calculus I &amp; II</li>
-            <li>Multivariable Calculus</li>
-            <li>Linear Algebra</li>
-            <li>Probability &amp; Statistics</li>
-            <li>Differential Equations</li>
-          </ul>
-          </section>
-        </section>
-
-        <br/>
-        <section id="education">
-        <section class="education-item">
-            <input id="education-item-2" type="checkbox" class="toggle-item" />
-            <label for="education-item-2"></label>
-          <header>
-            <div class="header-left">
-              <div class="area">
-                Advanced Level Studies
-              </div>
-              <div class="institution">
-                St. Francis of Assisi High School
-              </div>
-            </div>
-            <div class="date">
-              <span class="startDate">
-              2012
-              </span>
-              <span class="endDate">
-              - 2013
-              </span>
-            </div>
-          </header>
-        <div class="item">
-            <div class="summary" style="color: #24D05A">
-              <p>At St. Francis of Assisi High School in Chivhu, Zimbabwe, I studied Pure Mathematics, Further Mathematics, Physics, Chemistry, and Business Studies. I was elected Headboy/School Captain in 2012 and became President of the Debate Club in 2013. The Debate Club was the peak of my experiences at Assisi. We traveled far and wide competiting in debates on topics ranging from Water Management to Health.</p>
-            </div>
-          </div>
-          </section>
-        </section>
-
-        <section id="education">
-        <section class="education-item">
-            <input id="education-item-3" type="checkbox" class="toggle-item" />
-            <label for="education-item-3"></label>
-          <header>
-            <div class="header-left">
-              <div class="area">
-                Ordinary Level Studies
-              </div>
-              <div class="institution">
-                All Souls' High School
-              </div>
-            </div>
-            <div class="date">
-              <span class="startDate">
-              2008
-              </span>
-              <span class="endDate">
-              - 2011
-              </span>
-            </div>
-          </header>
-        <div class="item">
-            <div class="summary" style="color: dodgerblue">
-              <p>My best high school experience was at All Souls' in Mutoko, Zimbabwe. In 2009, I was elected a Prefect and remained one until I completed my studies. During this time, I won two Mathematics Olympiads and three years in a row, recieved the Best Student in Mathematics Award for each academic level. I was also a Sports Journalist and often gave reports at school assemblies, which greatly sharpened my public speaking and writing skills. I was also the President of the Altar Servers Association and helped facilitate liturgy.</p>
-            </div>
-          </div>
-          </section>
-        </section>
-    </section>
-
-    <section class="section">
-      <header>
-        <h2 class='section-title'>Work Experience</h2>
-      </header>
-
-
-        <section id="work">
-        <section class="work-item">
-            <input id="work-item-0" type="checkbox" class="toggle-item" checked="checked" />
-            <label for="work-item-0"></label>
-    			<header>
-    				<div class="position">Teaching Assistant (CS)</div>
-    				<div class="company">Emory University</div>
-    				<div class="date">
-    				  <span class="startDate">Sept/19</span>
-    					<span class="endDate"> - present</span>
-    				</div>
-    			</header>
-            <span class="website">
-        		<a target="_blank" href="http://cs.emory.edu/courses/atlas/">Emory CS course page</a>
-        	</span>
-            <div class="item" id="work-item">
-                <div class="summary">
-                   <p>TA for CS170, Introduction to Computer Science I. In this role, I:</p>
-                </div>
-            <ul class="highlights">
-                <li><p>Hold weekly office hours to support students and facilitate learning</p></li>
-                <li><p>Help students get unstuck during lecture</p></li>
-                <li><p>Assist faculty with grading problem sets</p></li>
-                <li><p>Answer questions on Piazza etc.</p></li>
-            </ul>
-        	</div>
-        </section>
-
-      <section id="work">
-        <section class="work-item">
-            <input id="work-item-1" type="checkbox" class="toggle-item"/>
-            <label for="work-item-1"></label>
-    			<header>
-    				<div class="position">Teaching Assistant (Math)</div>
-    				<div class="company">College of St. Scholastica</div>
-    				<div class="date">
-    				  <span class="startDate">Oct/18</span>
-    					<span class="endDate"> - May/19</span>
-    				</div>
-    			</header>
-            <span class="website">
-        		<a target="_blank" href="http://www.css.edu/academics/school-of-sciences/undergraduate-areas-of-study/mathematics.html">http://www.css.edu/academics/school-of-sciences/undergraduate-areas-of-study/mathematics.html</a>
-        	</span>
-            <div class="item" id="work-item">
-                <div class="summary">
-                   <p>TA for several Math courses including Calculus I-III and Differential Equations. In this role, I:</p>
-                </div>
-            <ul class="highlights">
-                <li><p>Hold weekly office hours to support students and facilitate learning.</p></li>
-                <li><p>Assist faculty with grading problem sets.</p></li>
-            </ul>
-        	</div>
-        </section>
-
-        <section class="work-item">
-            <input id="work-item-1" type="checkbox" class="toggle-item" />
-            <label for="work-item-1"></label>
-
-    			<header>
-    				<div class="position">Web Assistant</div>
-    				<div class="company">College of St. Scholastica</div>
-    				<div class="date">
-    				  <span class="startDate">Oct/16</span>
-    					<span class="endDate"> - May/19</span>
-    				</div>
-    			</header>
-
-        	<span class="website">
-        		<a target="_blank" href="https://www.css.edu">https://www.css.edu</a>
-        	</span>
-            <div class="item" id="work-item">
-                <div class="summary">
-                    <p>Work with the Marketing Department's web team on various projects aimed at improving the college's website.</p>
-                </div>
-                <ul class="highlights">
-                    <li><p>I support the web and marketing goals of the Interactive Services Team through web content design, creation, and editing, while following branding guidelines and best practices.</p></li>
-                    <li><p>Prepare site pages and content to meet accessibility guidelines.</p></li>
-                </ul>
-        	</div>
-        </section>
-
-        <section class="work-item">
-            <input id="work-item-2" type="checkbox" class="toggle-item" />
-            <label for="work-item-2"></label>
-
-    			<header>
-    				<div class="position">Software Engineer Intern</div>
-    				<div class="company">Facebook</div>
-    				<div class="date">
-    				  <span class="startDate">May/18</span>
-    					<span class="endDate"> - Aug/18</span>
-    				</div>
-    			</header>
-            <span class="website">
-        		<a target="_blank" href="https://www.facebook.com/about/crisisresponse/">https://www.facebook.com/about/crisisresponse/</a>
-        	</span>
-
-         	<div class="item" id="work-item">
-            <div class="summary">
-              <p>Worked with the Crisis Response/Safety Check team. Full-stack work in Hack, XHP, and JavaScript.</p>
-            </div>
-            <ul class="highlights">
-                <li><p>Worked on bringing Community Help, which allows users to find and offer help during a crisis, to Facebook’s mobile site.</p></li>
-                <li><p>Built a Mark Safe QP on WWW platform that resulted in a 25% increase in primary clicks, 43% increase in QP dismissals and 50% increase in ‘Does Not Apply’ clicks.</p></li>
-            </ul>
-        	</div>
-        </section>
-
-        <section class="work-item">
-            <input id="work-item-3" type="checkbox" class="toggle-item" />
-            <label for="work-item-3"></label>
-
-    			<header>
-    				<div class="position">Software Engineer Intern</div>
-    				<div class="company">Facebook</div>
-    				<div class="date">
-    				  <span class="startDate">Jun/17</span>
-    					<span class="endDate"> - Aug/17</span>
-    				</div>
-    			</header>
-
-        	<span class="website">
-        		<a target="_blank" href="https://www.facebook.com/careers/FBUEngineering">https://www.facebook.com/careers/FBUEngineering</a>
-        	</span>
-            <div class="item" id="work-item">
-                <div class="summary">
-                    <p>Participated in the Facebook University (FBU) for Engineering – iOS Development track. FBU is a hands-on, immersive internship program that enables students from underrepresented communities to get to know Facebook’s people, products and services.</p>
-                </div>
-                <ul class="highlights">
-                    <li><p>Developed from scratch an iOS app that integrated location-based facts, Tinder-style fact sharing, localization, image recognition(utilizing IBM Watson API) and Wikipedia descriptions.</p></li>
-                </ul>
-        	</div>
-        </section>
-
-        <section class="work-item">
-            <input id="work-item-4" type="checkbox" class="toggle-item" />
-            <label for="work-item-4"></label>
-
-    			<header>
-    				<div class="position">Urban Scholar &amp; Management Analyst</div>
-    				<div class="company">State of Minnesota, Department of Human Services (DHS)</div>
-    				<div class="date">
-    				  <span class="startDate">May/16</span>
-    					<span class="endDate"> - Aug/16</span>
-    				</div>
-    			</header>
-
-        	<span class="website">
-        		<a target="_blank" href="http://www.ci.minneapolis.mn.us/civilrights/urbanscholars/index.htm">http://www.ci.minneapolis.mn.us/civilrights/urbanscholars/index.htm</a>
-        	</span>
-            <div class="item" id="work-item">
-                <div class="summary">
-                    <p>Urban Scholars is a leadership and professional development internship program providing students from diverse racial and ethnic backgrounds with distinctive professional experience.</p>
-                </div>
-            <ul class="highlights">
-                <li><p>Assisted the DHS' Member Provider Services communications team in the development and implementation of a process to archive Provider Manual web page revisions and index web page documents.</p></li>
-                <li><p>Implemented the Minnesota State Government’s Plain Language initiative in web page revisions to promote accessibility.</p></li>
-                <li><p>Participated in the Urban Scholars Leadership Institute. Awarded Certificate of Commendation.</p></li>
-            </ul>
-        	</div>
-        </section>
-
-        <section class="work-item">
-            <input id="work-item-5" type="checkbox" class="toggle-item" />
-            <label for="work-item-5"></label>
-
-    			<header>
-    				<div class="position">Team Leader and Technology Assistant (IT Help Desk)</div>
-    				<div class="company">College of St. Scholastica</div>
-    				<div class="date">
-    				  <span class="startDate">Sept/15</span>
-    					<span class="endDate"> - Oct/18</span>
-    				</div>
-    			</header>
-
-        	<span class="website">
-        		<a target="_blank" href="http://www.css.edu/administration/information-technologies.html">http://www.css.edu/administration/information-technologies.html</a>
-        	</span>
-            <div class="item" id="work-item">
-                <div class="summary">
-                    <p>The IT Department provides services to enable enhanced teaching and learning in support of students, faculty, and staff; while also providing a robust and reliable infrastructure that supports efficient business operations at CSS.</p>
-                </div>
-                <ul class="highlights">
-                    <li><p>Co-led and supervised a team of 15 TAs offering technical support, troubleshooting and diagnosing network and technical issues.</p></li>
-                    <li><p>Demonstrate advanced customer service skills while interacting and communicating with peers, faculty, and staff from diverse backgrounds.</p></li>
-                </ul>
-        	</div>
-        </section>
-
-      </section>
-    </section>
-
-
-    <section class="section">
-      <header>
-        <h2 class='section-title'>Projects</h2>
-      </header>
-      <section id="projects">
-        <section class="project-item">
-            <input id="project-item-0" type="checkbox" class="toggle-item" checked="checked" />
-            <label for="project-item-0"></label>
-
-          <header>
-            <div class="position">Animal Allies Humane Society (AAHS)</div>
-            <div class="date">
-              <span class="startDate">Sept/18</span>
-              <span class="endDate"> - Dec/18</span>
-            </div>
-          </header>
-          <span class="website">
-            <a target="_blank" href="https://www.animalallies.net/">https://www.animalallies.net/</a>
-          </span>
-          <ul class="keywords">
-              <li>Consulting</li>
-              <li>Volunteer Work</li>
-              <li>Project Management</li>
-              <li>CMS</li>
-          </ul>
-          <div class="item">
-            <div class="summary">
-              <p>With 2 other students from my CIS Capstone Project class, I worked with Animal Allies, an animal shelter based in Duluth, MN, on a project to migrate to a new CRM system.</p>
-            </div>
-            <ul class="highlights">
-                <li><p>Researched alternative CRM systems and conducted objective system analysis to help AAHS pick a new CR client.</p></li>
-                <li><p>Developed a data migration plan and performed risk assessment work.</p></li>
-                <li><p>Converted data into a format suitable for the new system.</p></li>
-                <li><p>Compiled report of research and work done.</p></li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="project-item">
-            <input id="project-item-1" type="checkbox" class="toggle-item" />
-            <label for="project-item-1"></label>
-
-          <header>
-            <div class="position">tumblr</div>
-            <div class="date">
-              <span class="startDate">June/17</span>
-              <span class="endDate"> - Jul/17</span>
-            </div>
-          </header>
-          <span class="website">
-            <a target="_blank" href="https://github.com/mmadondo/tumblr">https://github.com/mmadondo/tumblr</a>
-          </span>
-          <ul class="keywords">
-              <li>Tumblr API</li>
-              <li>iOS Development</li>
-              <li>Swift</li>
-              <li>CodePath.Org</li>
-          </ul>
-          <div class="item">
-            <div class="summary">
-                <p>tumblr is an iOS photo browsing app using the The Tumblr API.</p>
-            </div>
-            <ul class="highlights">
-                <li><p>User can scroll through a feed of images returned from the Tumblr API</p></li>
-                <li><p> User can tab an image to view a larger image in a detail view</p></li>
-                <li><p>Implemented infinite scrolling</p></li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="project-item">
-            <input id="project-item-2" type="checkbox" class="toggle-item" />
-            <label for="project-item-2"></label>
-
-          <header>
-            <div class="position">Humans of New York (HONY)</div>
-            <div class="date">
-              <span class="startDate">Sept/17</span>
-              <span class="endDate"> - Dec/17</span>
-            </div>
-          </header>
-          <span class="website">
-            <a target="_blank" href="http://student.css.edu/codeduluth/malvern/tumblrHONY.html">http://student.css.edu/codeduluth/malvern/tumblrHONY.html</a>
-          </span>
-          <ul class="keywords">
-              <li>HTML/CSS</li>
-              <li>Tumblr API</li>
-              <li>Humans of New York</li>
-              <li>JavaScript</li>
-              <li>Web App</li>
-          </ul>
-          <div class="item">
-            <div class="summary">
-              <p>A website that utilizes Tumblr API to retrieve Humans of New York stories!</p>
-            </div>
-            <ul class="highlights">
-                <li><p>Each post containes the main photo and is followed by the summary.</p></li>
-                <li><p>Clicking on an image opens the respective HONY post</p></li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="project-item">
-            <input id="project-item-3" type="checkbox" class="toggle-item" />
-            <label for="project-item-3"></label>
-
-          <header>
-            <div class="position">Weather App</div>
-            <div class="date">
-              <span class="startDate">Sept/17</span>
-              <span class="endDate"> - Dec/17</span>
-            </div>
-          </header>
-          <span class="website">
-            <a target="_blank" href="http://student.css.edu/codeduluth/malvern/unit7_openWeather.html">http://student.css.edu/codeduluth/malvern/unit7_openWeather.html</a>
-          </span>
-          <ul class="keywords">
-              <li>web app</li>
-              <li>html/css</li>
-              <li>javascript</li>
-              <li>OpenWeatherMap API</li>
-              <li>Docker</li>
-          </ul>
-          <div class="item">
-            <div class="summary">
-              <p>Allow user to find out the weather in any location using the ZIP code.</p>
-            </div>
-            <ul class="highlights">
-                <li><p>Utilize OpenWeatherMap API to extract detailed weather forecast of a location.</p></li>
-            </ul>
-          </div>
-        </section>
-        <section class="project-item">
-            <input id="project-item-4" type="checkbox" class="toggle-item" />
-            <label for="project-item-4"></label>
-
-          <header>
-            <div class="position">Course Status Report</div>
-            <div class="date">
-              <span class="startDate">Sept/17</span>
-              <span class="endDate"> - Dec/17</span>
-            </div>
-          </header>
-          <span class="website">
-            <a target="_blank" href="http://student.css.edu/codeduluth/malvern/">http://student.css.edu/codeduluth/malvern/</a>
-          </span>
-          <ul class="keywords">
-              <li>Web</li>
-              <li>html/css</li>
-              <li>JavaScript</li>
-          </ul>
-          <div class="item">
-            <div class="summary">
-              <p>A progress report for an 8-week course I took. Thought of detailing work done for each week and including links to all projects I did.</p>
-            </div>
-            <ul class="highlights">
-                <li><p>Includes weekly status report and links to projects completed.</p></li>
-            </ul>
-          </div>
+        <header>
+            <h2 class='section-title'>Research</h2>
+        </header>
+        <section class="research">
+          <p>At Emory, I work with <a href="https://www.mathcs.emory.edu/~lruthot/">Dr. Lars Ruthotto</a> on a variety of computational problems, especially in reinforcement learning and optimal control. I also have interests in computer science education, particularly in personalized learning. As such, I also work with  <a href="https://scholar.google.com/citations?user=EQ61oMAAAAAJ&hl=en">Dr. Davide Fossati</a> in technology enhanced learning. 
+        </p>
         </section>
       </section>
-    </section>
-
-    <section class="section">
-      <header>
-        <h2 class='section-title'>Publications</h2>
-      </header>
-      <section id="publications">
-        <section class="publication-item">
-            <input id="publication-item-0" type="checkbox" class="toggle-item" checked="checked" />
-            <label for="publication-item-0"></label>
-
-          <header>
-            <div class="header-left">
-              <span class="name">
-              <span class="website">
-              <a target="_blank" href="http://micsymposium.org/mics2018/proceedings/MICS_2018_paper_26.pdf">Learning and Modeling Chaos Using LSTM Recurrent Neural Networks</a>
-              </span>
-              </span>
-            </div>
-            <span class="date">
-            April 2018
-            </span>
-          </header>
-
-          <div class="item">
-            <ul class="keywords">
-              <li>Dynamical Systems</li>
-              <li>Nonlinear Differential Equations</li>
-              <li>Chaos Theory</li>
-              <li>LSTM networks</li>
-              <li>RNN</li>
-              <li>Lorenz System</li>
-          </ul>
-            <div class="summary">
-              <p>Presented at the 2018 Midwest Instruction &amp; Computing Symposium.</p>
-              <p><strong>Abstract: </strong>
-                  In nonlinear dynamical systems, long-term prediction is extremely challenging. Small perturbations in an initial state can grow exponentially in time and result in large differences in a later advanced state - a behavior known as chaos. Chaotic systems tend to have sensitive dependence on initial conditions, much like the Butterfly Effect. Recurrent Neural Networks are dynamic and allow for modeling of chaotic behavior. In this paper, we study and investigate the the modeling and prediction abilities of a Long Short-Term Memory (LSTM) recurrent neural network in dynamical systems with chaotic behavior. In particular, we explore the Lorenz System - which comprises of a nonlinear system of differential equations describing two-dimensional flow of a fluid, and describe an architecture that models the systems’ behavior.</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="publication-item">
-            <input id="publication-item-1" type="checkbox" class="toggle-item" />
-            <label for="publication-item-1"></label>
-
-          <header>
-            <div class="header-left">
-              <span class="name">
-              <span class="website">
-              <a target="_blank" href="http://micsymposium.org/mics2018/proceedings/MICS_2018_paper_41.pdf">Hitchhiker’s Guide to Computer Science for Social Good</a>
-              </span>
-              </span>
-            </div>
-            <span class="date">
-            April 2018
-            </span>
-          </header>
-
-          <div class="item">
-            <ul class="keywords">
-             <li>Learning Communities</li>
-             <li>Peer Mentoring</li>
-             <li>Google IgniteCS</li>
-             <li>Computer Science Education</li>
-            </ul>
-            <div class="summary">
-              <p>Presented at the 2018 Midwest Instruction &amp; Computing Symposium.</p>
-              <p><strong>Abstract: </strong> Many college students want to make an impact at their schools, local communities, and the world at large. Many students who want to make an impact are limited by the lack of support, resources, and opportunities. About a year ago, we started planning and organizing a number of programs and events with the goal of building a close-knit community of responsible learners interested in technology and solving problems facing society, especially in education. In the spirit of passing on the baton and encouraging other college students to accomplish the same and more, this paper discusses challenges faced and lessons learned while implementing an enrichment program developed, in partnership with Google IgniteCS, for local Middle School students to learn about computer science – an opportunity that is not readily available to these students. We also briefly share about other events and programs we organized to develop a strong technical community on campus as well as strategies on how to replicate and improve such programs elsewhere.</p>
-            </div>
-          </div>
-        </section>
-      </section>
-    </section>
-
-
-
-    <section class="section margin1">
-    	<header>
-    		<h2 class='section-title'>Skills</h2>
-    	</header>
-    	<section id="skills">
-    		<div class="item">
-    			<h3 class="name">
-    				Proficient
-    			</h3>
-    			 <ul class="keywords">
-    				<li>Java</li>
-    				<li>Hack</li>
-    				<li>PHP</li>
-    				<li>SQL</li>
-    				<li>HTML/CSS</li>
-    			</ul>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				Intermediate
-    			</h3>
-    			 <ul class="keywords">
-    				<li>Python</li>
-                    <li>C++</li>
-    				<li>React</li>
-    				<li>Javascript</li>
-    			</ul>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				Misc
-    			</h3>
-                <ul class="keywords">
-    				<li>Keras</li>
-    				<li>Tensorflow</li>
-    				<li>Git</li>
-    			</ul>
-    		</div>
-    	</section>
-    </section>
-   </div>
-
-      <script src="./script.js"></script>
-      <style>.toggle-item~.item {clear:both}</style>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
-
-<!--Credits: Based on http://abhinavsuri.com/ and inspired by http://cassidoo.co/ ---->
