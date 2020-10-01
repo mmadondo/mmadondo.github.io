@@ -389,3 +389,19 @@ h2.section-title {
     -webkit-justify-content: flex-start;
     justify-content: flex-start;
 }
+
+/*Custom research list items*/
+dt {
+    font-weight: bold;
+}
+
+dl,
+dd {
+    font-size: .9rem;
+}
+
+dd {
+    margin-bottom: 1em;
+}
+
+li span{display: contents; width: 70px;}
