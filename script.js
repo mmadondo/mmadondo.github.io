@@ -46,7 +46,7 @@ function setColorHoverListener() {
 /* Photos */
 
 function setRandomPhoto() {
-  let num = Math.floor(Math.random() * 7) + 1;
+  let num = Math.floor(Math.random() * 2) + 1;
   document.getElementById("propic").src = `./img/face${num}.jpg`;
 }
 
