@@ -81,19 +81,17 @@ function initPhotoSwap() {
   const photos = ["./img/face1.jpg", "./img/face2.jpg"];
   let current = 0;
 
-  // Swap on click instead of auto-cycle (more professional)
-  img.style.cursor = "pointer";
-  img.title = "Click to change photo";
+  // smooth opacity transitions
+  img.style.transition = "opacity 0.3s ease";
 
-  img.addEventListener("click", () => {
+  function swap() {
     current = (current + 1) % photos.length;
     img.style.opacity = "0";
     setTimeout(() => {
       img.src = photos[current];
       img.style.opacity = "1";
-    }, 200);
-  });
+    }, 300);
+  }
 
-  // Smooth opacity transitions
-  img.style.transition = "opacity 0.3s ease";
+  setInterval(swap, 7000);
 }
