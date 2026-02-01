@@ -1,184 +1,405 @@
 <!DOCTYPE html>
-<!--Adapted from Cassidy Williams' old website! https://cassidoo.co/-->
 <html lang="en">
   <head>
-    <title>Malvern Madondo</title>
-    <meta name="author" content="Malvern Madondo"/>
+    <title>Malvern Madondo — Research Scientist</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Malvern Madondo" />
     <meta
       name="description"
-      content="Malvern Madondo is a computational research scientist specializing in Machine Learning and Applied Mathematics for biomedical applications."
+      content="Malvern Madondo is a Research Scientist at the University of Chicago, specializing in deep reinforcement learning for AI-driven cancer treatment planning."
     />
-
-    <!-- Favicon/theme -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="/img/apple-touch-icon.png"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/img/favicon-32x32.png"
-      sizes="32x32"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/img/favicon-16x16.png"
-      sizes="16x16"
-    />
-    <link rel="manifest" href="/img/manifest.json" />
-    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="rgb(181,133,0)" />
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" />
     <link rel="shortcut icon" href="/img/favicon.ico" />
-    <meta name="msapplication-config" content="/img/browserconfig.xml" />
-    <meta name="theme-color" content="#ffffff" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
+    <meta name="theme-color" content="#0a1628" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
-    <div class="container">
-      <div class="header-section">
-        <div class="header-frame">
-          <h1>Malvern Madondo</h1>
-          <h2>Research Scientist | UChicago</h2>
-            <div class="img-frame">
-              <img id="propic" src="./img/face1.jpg" alt="" />
-            </div>
-            </div>
-        </div>
-        <p style="text-align:center">
-           <a href="mailto:madondomalvern@gmail.com">Email</a> &nbsp;/&nbsp;
-            <a href="https://www.linkedin.com/in/malvern" target="_blank">Linkedin</a>&nbsp;/&nbsp;
-            <a href="https://github.com/mmadondo" target="_blank">GitHub</a>&nbsp;/&nbsp;
-            <a href="https://scholar.google.com/citations?user=cHLscm8AAAAJ&hl=en">Google Scholar</a>
-          </p>
-        <p>
-          I am a Research Scientist in the Radiation and Cellular Oncology department of UChicago's <a href="https://biologicalsciences.uchicago.edu/">Biological Sciences Division</a>. My research focuses on developing automatic treatment planning algorithms for various radiotherapy modalities.
-        </p>
-        <p>
-          I obtained my PhD in Computer Science from Emory University where I was advised by <a href="https://www.mathcs.emory.edu/~lruthot/">Dr. Lars Ruthotto</a>, and supported by a <a href="https://research.google/programs-and-events/phd-fellowship/recipients/?filtertab=2021">Google PhD Fellowship in Computational Neural and Cognitive Sciences</a>.
-          Prior to Emory, I studied Computer Science/Information Systems and Mathematics at <a href="https://www.css.edu/">The College of Saint Scholastica</a>.
-        </p>
-      <div class="dark-mode-toggler">
-        <input type="checkbox" id="toggler" />
-        <label for="toggler" aria-label="Toggler for Dark Mode"></label>
-      </div>
-        
-    <section class="section">
-        <header>
-            <h2 class='section-title'>Changelog</h2>
-        </header>
-        <section class="changelog">
-          <ul id="highlights">
-            <li class="event"><b style="color: #880000">07/2024</b> &mdash; Starting as a Research Scientist at the University of Chicago in the Department of Radiation & Cellular Oncology!</li>
-            <li class="event"><b style="color: rgb(181,133,0)">04/2024</b> &mdash; Defended my PhD dissertation on "Applications of Closed-loop Control in Biomedical Interventions: From Neural Modulation to Diabetes Management" at Emory University!</li>
-            <li class="event"><b style="color: rgb(181,133,0)">03/2024</b> &mdash; Giving a lightning talk on "<a href="https://arxiv.org/abs/2311.07563">Learning Control Policies of Hodgkin-Huxley Neuronal Dynamics</a>", at <a href="https://2024.mcbios.com/">MCBIOS24</a></li>
-            <li class="event"><b style="color: rgb(181,133,0)">03/2024</b> &mdash; Poster presentation on "A Neural ODE Approach to Glycemic Control" (based on my Lilly internship) at <a href="https://2024.mcbios.com/">MCBIOS24</a></li>
-            <li class="event"><b style="color: rgb(181,133,0)">11/2023</b> &mdash; Presented our work, "<a href="https://arxiv.org/abs/2311.07563">Learning Control Policies of Hodgkin-Huxley Neuronal Dynamics</a>", at Machine Learning for Health (<a href="https://ml4health.github.io/2023/">ML4H 2023</a>)</li>
-            <!-- <li class="event"><b style="color: rgb(181,133,0)">08/2023</b> &mdash; Completed my research internship with the Advanced Analytics and Data Sciences (AADS) team at Eli Lilly.</li>
-            <li class="event"><b style="color: rgb(181,133,0)">09/2022</b> &mdash; Giving a talk on "Closed-loop Deep Brain Stimulation via Optimal Control" at the <a href="https://www.siam.org/conferences/cm/conference/mds22">SIAM Mathematics of Data Science 2022</a> conference! [<a href="https://mmadondo.github.io/docs/Malvern_SIAM_MDS22_Poster.pdf" target="_blank">poster</a>]</li>
-            <li class="event"><b style="color: rgb(181,133,0)">08/2022</b> &mdash; Completed my research internship with the Responsible Tech team at IBM Research in Yorktown Heights, NY.</li>
-            <li class="conference"><b style="color: rgb(181,133,0)">03/2022</b> &mdash; In San Diego, CA, for the CRA Grad Cohort Workshop for Inclusion, Diversity, Equity, Accessibility, and Leadership Skills (<a href="https://cra.org/cra-wp/grad-cohort-ideals/">IDEALS</a>)</li>
-            <li class="event"><b style="color: rgb(181,133,0)">08/2021</b> &mdash; Thrilled to be one of the recipients of the 2021 <a href="https://research.google/outreach/phd-fellowship/">Google PhD Fellowship</a></li>
-            <li class="event"><b style="color: rgb(181,133,0)">05/2021</b> &mdash; Started my research internship with the Tech for Justice team at IBM Research where I'm collaborating with researchers in the Center for Computational Health.</li> -->
-            <!--
-            <li class="event"><b style="color: deepskyblue">5/24/21</b> Started my research internship with the Tech for Justice team and collaborating with the Center for Computational Health, both @IBMResearh. Will be working on reinforcement learning, representation learning, and fairness. Stay tuned!</li>
-            <li class="event"><b style="color: red">2/8/21</b> This week I will be participating in the <a href="http://www.birs.ca/events/2021/5-day-workshops/21w5167">Optimization under Uncertainty: Learning and Decision Making</a> workshop at the Banff International Research Station for Mathematical Innovation and Discovery (BIRS).</li>
-            <li class="event"><b style="color: goldenrod">12/7/20</b> Participating in the online 2020 Conference on Neural Information Processing Systems(<a href="https://nips.cc/">NeurIPS</a>)</li>
-            <li class="workshop"><b style="color: #96979c">10/13/20</b> External reviewer for The 4th  <a href="https://blackinai.github.io/#">Black In AI</a> Workshop @ NeurIPS 2020</li>
-            <li class="event"><b style="color: deepskyblue">9/22/20</b> Participated in an online panel discussing careers in tech and sharing resources with high school students taking the CollegeBoard AP CS course!</li>
-            <li class="school"><b style="color: red">8/19/20</b> Co-teaching three sections of CS170 Introduction to Computer Science this fall!</li>
-            <li class="award"><b style="color: goldenrod">8/5/20</b> Honored to be selected a <a href="https://scienceatl.org/scicommfellow/">Science ATL Communication Fellow</a>!</li>
-            <li class="conference"><b style="color: deepskyblue">3/5/20</b> In Austin, TX, for the CRA Grad Cohort for Underrepresented Minorities and Persons with Disabilities (<a href="https://cra.org/cra-wp/grad-cohort-ideals/">URMD</a>)</li>
-            <li class="event"><b style="color: red">2/22/20</b> Spoke at the 2020 <a href="https://dooleyhacks.com/">DooleyHacks</a> Diversity in Tech panel!</li> 
-            <li class="school"><b style="color: goldenrod">1/07/20</b> Participating in the  <a href="http://www.physics.emory.edu/home/about/news/WISQCE.html">2020 Winter School on Quantum Computing at Emory</a> featuring experts from IBM, Emory, Virgina Tech, UGA, Uni of Maryland, and Uni Federal do Rio de Janeiro</li>
-            <li class="school"><b style="color: goldenrod">8/28/19</b> First day of classes as a graduate student!</li>
-            <li class="event"><b style="color: chartreuse">8/8/19</b> After 4 years, I am leaving MN for warmer climes in Georgia! My first solo road trip from Duluth, MN to Atlanta, GA!</li>
-            <li class="event"><b style="color: #96979c">6/2/19</b> Camping by Clearwater Lake in the Boundary Waters for the next couple days! Thanks to my undergrad advisor, Luther, for the opportunity!</li>
-            -->
-            <!-- <li class="school"><b style="color: red">5/12/19</b> Graduated a Webster Scholar and with highest honors from The College of Saint Scholastica! My endless gratitude to all family, friends, teachers, and others whose efforts, direct or indirect, led to this momentous occassion.</li> -->
-         </ul>
-        </section>
-      </section>
-
-    <section class="section">
-        <header>
-            <h2 class='section-title'>Research</h2>
-        </header>
-        <section class="research">
-        <p>
-          I am interested in applications of machine learning and mathematical optimization, particularly reinforcement learning and optimal control, in critical domains like healthcare. 
-          Some of my research efforts include developing closed-loop control solutions for neuromodulatory interventions, such as deep brain stimulation, and glycemic control systems for Type 1 Diabetes management.
-        </p>
-        
-        Related projects include:
-        <ul id="highlights">
-          <li><b style="color: goldenrod">Closed-loop Control for Deep Brain Stimulation</b><br/> 
-            <b style="color: #96979c">[Emory University '24]</b> 
-              <p>
-                Interdisciplinary collaboration with <a href="https://www.mathcs.emory.edu/~lruthot/">Dr. Lars Ruthotto</a> and <a href="https://scholar.google.com/citations?user=E8JhPv4AAAAJ&hl=en&inst=15365353816232672843">Dr. Nicholas Au Yong</a> on developing adaptive control algorithms for optimizing deep brain stimulation via Reinforcement Learning and Optimal Control.
-              </p>
-            </li>
-            <br/>
-        <li><b style="color: goldenrod">Glycemic Control for Type 1 Diabetes Management</b><br/>
-          <b style="color: #96979c">[IBM Research '21 | Eli Lilly '23]</b> 
-          <p>
-            Implemented various control strategies for managing blood glucose levels in simulated Type 1 Diabetes patients. Leveraged RL and OC theory to model the glucoregulatory system and develop algorithms for real-time insulin delivery, reducing the risk of hyperglycemia and hypoglycemia across various meal scenarios.
-          </p>
-        </li>
-        <br/>
-        <li><b style="color: goldenrod">Reinforcement Learning for Sustainable Agriculture</b><br/> 
-        <b style="color: #96979c">[IBM Research '22]</b> 
-          <p>
-            Developed <a href="https://github.com/IBM/SWATgym">SWATGym</a>, a reinforcement learning environment for crop management based on the <a href="https://swat.tamu.edu/">Texas A&M Soil & Water Assessment Tool</a>(SWAT). 
-            SWATgym enables evaluation of various crop management strategies on a full growing season. It includes standard and RL-based agents for decision-making, and a reward function that captures the trade-offs between crop yield and environmental impact.
-          </p>
-        </li>
-        <br/>
-        <li><b style="color: goldenrod">Fair Reinforcement Learning</b><br/> 
-        <b style="color: #96979c">[IBM Research '21]</b>
-          <p>
-            Exploring bias in patient representation in healthcare and developing a fair treatment strategy by leveraging representation learning and reinforcement learning. Work done during internship with IBM Research in collaboration with the talented team at the Center for Computational Health: Mohamed Ghalwash, Zach Shahn, and Pablo Meyer Rojas.
-          </p>
-        </li>
-        <br/>
-        <li><b style="color: goldenrod">Reinforcement Learning and Graph Generation</b><br/> 
-        <b style="color: #96979c">[Emory University]</b> 
-        <p>
-          Applying model-based Reinforcement Learning strategies in the field of graph generation, in particular, to generative models that can learn to create novel graphs efficiently.
-        </p>
-        </li>
-            <!-- <br/> 
-            <li><b style="color: goldenrod">Towards Mastery Learning in Computer Science Education</b><br/> 
-                <b style="color: #96979c">[May - December 2020]</b> Lab rotation with <a href="https://scholar.google.com/citations?user=EQ61oMAAAAAJ&hl=en">Dr. Davide Fossati</a> on technology enhanced learning. Constructing an unlimited (or very large) supply of practice problems, annotated by skill, that can be used in an asynchronous learning setting to help students attain "mastery" of topics at their own pace as an alternative to synchronous learning. Proficiency is determined and updated in real time by stochastic models.
-                <!--Unlike in standard CS courses where learning is mostly synchronous and sequential, mastery learning is asynchronous and enables students to move to the next topic at their own pace, after having achieved “mastery” of the previous topics. Proficiency is determined and updated in real time by stochastic models e.g. BKT. In order to implement mastery learning, there are 3 key requirements: (1) Robust technology platform for practice problems; (2) Unlimited (or very large) supply of practice problems, annotated by skill; and (3) Comprehensive and reliable Knowledge Tracing models and algorithms.-->
-             <!-- </li>
-            <br/>
-            <li><b style="color: goldenrod">UPenn and Mayo Clinic's Seizure Detection Challenge</b><br/> 
-                <b style="color: #96979c">[spring 2020]</b> Working with <a href="http://yazhuozhang.com/">Yazhuo</a> and <a href="https://scholar.google.com/citations?user=TBl8dYgAAAAJ&hl=en&inst=15365353816232672843">Ramraj</a>, developed computational algorithms that detect seizures in intracranial EEG recordings of 8 human patients with epilepsy and 4 canines with naturally-occurring epilepsy. Part of the <a href="https://www.kaggle.com/c/seizure-detection">UPenn and Mayo Clinic's Seizure Detection Challenge</a> on Kaggle.
-            </li>
-            <br/> 
-            <li><b style="color: goldenrod">OpenAI BipedalWalker-v2 Challenge</b><br/> 
-                <b style="color: #96979c">[fall 2019]</b> Working with <a href="https://scholar.google.com/citations?user=TBl8dYgAAAAJ&hl=en&inst=15365353816232672843">Ramraj</a>, implemented RL strategies to train a <a href="https://github.com/openai/gym/wiki/Leaderboard#bipedalwalker-v2">2D bipedal walker</a> to navigate rough terrain. We developed: (1) Deep Deterministic Policy Gradients (DDPG); (2) Evolution Strategies (ES); and (3) Augmented Random Search (ARS) algorithms.
-            </li> -->
-        </ul>
-
-        </section>
-      </section>
+    <!-- Dark mode toggle -->
+    <div class="dark-mode-toggler">
+      <input type="checkbox" id="toggler" />
+      <label for="toggler" aria-label="Toggle dark mode">
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </label>
     </div>
+
+    <div class="container">
+      <!-- Hero Section -->
+      <header class="hero" id="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-name">Malvern Madondo</h1>
+            <p class="hero-title">Research Scientist&ensp;·&ensp;University of Chicago</p>
+            <p class="hero-tagline">
+              Developing AI-driven treatment planning algorithms at the intersection of
+              <em>deep reinforcement learning</em>, <em>optimal control</em>, and <em>clinical oncology</em>.
+            </p>
+            <nav class="hero-links">
+              <a href="mailto:madondomalvern@gmail.com">Email</a>
+              <a href="https://www.linkedin.com/in/malvern" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://github.com/mmadondo" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://scholar.google.com/citations?user=yYwEzOcAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+            </nav>
+          </div>
+          <div class="hero-photo">
+            <div class="img-frame">
+              <img id="propic" src="./img/face1.jpg" alt="Malvern Madondo" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- About -->
+      <section class="section fade-in" id="about">
+        <h2 class="section-title">About</h2>
+        <div class="section-body">
+          <p>
+            I am a Research Scientist in the <a href="https://biologicalsciences.uchicago.edu/">Biological Sciences Division</a> at the University of Chicago, 
+            working in the Department of Radiation &amp; Cellular Oncology. My research focuses on developing automatic treatment planning 
+            algorithms for various radiotherapy modalities using deep reinforcement learning and mathematical optimization.
+          </p>
+          <p>
+            I obtained my PhD in Computer Science from Emory University, advised by 
+            <a href="https://www.math.emory.edu/~lruthot/">Dr. Lars Ruthotto</a> and supported by a 
+            <a href="https://research.google/programs-and-events/phd-fellowship/recipients/?filtertab=2021">Google PhD Fellowship</a> 
+            in Computational Neural and Cognitive Sciences. My doctoral research developed closed-loop control solutions 
+            for neuromodulatory interventions and glycemic control systems.
+            Prior to Emory, I studied Computer Science and Mathematics at 
+            <a href="https://www.css.edu/">The College of St. Scholastica</a>.
+          </p>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="section fade-in" id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="section-body">
+          <div class="timeline">
+
+            <article class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Research Scientist I</h3>
+                  <span class="timeline-date">Jul 2024 - Present</span>
+                </div>
+                <p class="timeline-org">University of Chicago · Dept. of Radiation &amp; Cellular Oncology, Tian Lab</p>
+                <p>
+                  Developing deep RL algorithms to optimize proton therapy treatment plans for head-and-neck cancer. 
+                  Designing scalable simulated environments in Python and PyTorch to accelerate prototype-to-clinic translation 
+                  of AI-driven treatment planning solutions across multiple modalities.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>PhD Research Lead</h3>
+                  <span class="timeline-date">Aug 2019 - May 2024</span>
+                </div>
+                <p class="timeline-org">Emory University · Machine Learning &amp; Inverse Problems Group</p>
+                <p>
+                  Developed closed-loop control frameworks for DBS neuromodulation (Hodgkin-Huxley dynamics) and 
+                  Type 1 diabetes management (Bergman minimal model), integrating neural networks with Pontryagin's 
+                  Maximum Principle and HJB equations to enable real-time adaptive treatment in silico. 
+                  Secured over $350K in competitive research funding including the Google PhD Fellowship.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>PhD ML &amp; AI Intern</h3>
+                  <span class="timeline-date">May - Aug 2023</span>
+                </div>
+                <p class="timeline-org">Eli Lilly &amp; Company · Advanced Analytics &amp; Data Science</p>
+                <p>
+                  Developed a hybrid control framework combining neural ODEs with PID control and HJB-based optimal control 
+                  for automated insulin delivery. Modeled gluco-insulin dynamics via the Bergman minimal model, designed reward metrics and adaptive dosing strategies for real-time glucose regulation.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>PhD Research Intern</h3>
+                  <span class="timeline-date">2021 &amp; 2022</span>
+                </div>
+                <p class="timeline-org">IBM Research · Responsible &amp; Inclusive Technologies</p>
+                <p>
+                  Created and open-sourced <a href="https://github.com/IBM/SWATgym">SWATGym</a> for precision agriculture (adopted by 5+ research groups). 
+                  Developed fairness-constrained RL algorithms for equitable diabetes management achieving &gt;87% Time-In-Range 
+                  across diverse patient populations.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Software Engineering Intern</h3>
+                  <span class="timeline-date">2017 &amp; 2018</span>
+                </div>
+                <p class="timeline-org">Meta · Crisis Response &amp; Facebook University</p>
+                <p>
+                  Built crisis assistance tools boosting Community Help platform engagement by 39%. 
+                  Co-designed an iOS app with location-based features and image recognition via IBM Watson API.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Research -->
+      <section class="section fade-in" id="research">
+        <h2 class="section-title">Research</h2>
+        <div class="section-body">
+          <p>
+            I am interested in applications of machine learning and mathematical optimization — particularly 
+            reinforcement learning and optimal control — in critical domains like healthcare. My current focus 
+            is on AI-driven treatment planning for radiation therapy, with prior work spanning neuromodulation, 
+            glycemic control, sustainable agriculture, and algorithmic fairness.
+          </p>
+
+          <div class="research-grid">
+            <article class="research-card">
+              <span class="research-tag">Current</span>
+              <h3>AI-Driven Proton Therapy Planning</h3>
+              <p class="research-affil">University of Chicago · 2024-Present</p>
+              <p>
+                Developing patient-specific deep RL frameworks (ProtonRL) for automatic replanning in head-and-neck 
+                cancer proton therapy, improving clinical decision support and accelerating treatment workflows.
+              </p>
+              <div class="research-links">
+                <a href="https://github.com/mmadondo" target="_blank" rel="noopener">code</a>
+                <a href="https://arxiv.org/abs/2506.10073" target="_blank" rel="noopener">paper</a>
+              </div>
+            </article>
+
+            <article class="research-card">
+              <h3>Closed-loop Deep Brain Stimulation</h3>
+              <p class="research-affil">Emory University · 2019-2024</p>
+              <p>
+                Adaptive control algorithms for optimizing deep brain stimulation via RL and optimal control, 
+                in collaboration with <a href="https://www.mathcs.emory.edu/~lruthot/">Dr. Lars Ruthotto</a> 
+                and <a href="https://scholar.google.com/citations?user=E8JhPv4AAAAJ">Dr. Nicholas Au Yong</a>.
+              </p>
+              <div class="research-links">
+                <a href="https://github.com/mmadondo/HH_control" target="_blank" rel="noopener">code</a>
+                <a href="https://arxiv.org/abs/2311.07563" target="_blank" rel="noopener">paper</a>
+                <a href="./docs/Malvern_SIAM_MDS22_Poster.pdf" target="_blank" rel="noopener">poster</a>
+              </div>
+            </article>
+
+            <article class="research-card">
+              <h3>Glycemic Control for Type 1 Diabetes</h3>
+              <p class="research-affil">IBM Research · Eli Lilly · 2021-2023</p>
+              <p>
+                Developed control strategies leveraging RL and OC theory for real-time insulin delivery, 
+                reducing hyperglycemia and hypoglycemia risk across diverse patient populations and meal scenarios.
+              </p>
+            </article>
+
+            <article class="research-card">
+              <h3>RL for Sustainable Agriculture</h3>
+              <p class="research-affil">IBM Research · 2022</p>
+              <p>
+                Created <a href="https://github.com/IBM/SWATgym">SWATGym</a>, an RL environment for crop management 
+                based on the Texas A&amp;M SWAT model, enabling evaluation of management strategies that balance 
+                crop yield with environmental impact.
+              </p>
+              <div class="research-links">
+                <a href="https://github.com/IBM/SWATgym" target="_blank" rel="noopener">code</a>
+                <a href="https://arxiv.org/abs/2302.04988" target="_blank" rel="noopener">paper</a>
+              </div>
+            </article>
+
+            <article class="research-card">
+              <h3>Fair Reinforcement Learning</h3>
+              <p class="research-affil">IBM Research · 2021</p>
+              <p>
+                Explored bias in patient representation in healthcare and developed fair treatment strategies 
+                leveraging representation learning and RL, in collaboration with the Center for Computational Health.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Selected Publications -->
+      <section class="section fade-in" id="publications">
+        <h2 class="section-title">Selected Publications</h2>
+        <div class="section-body">
+          <p class="pub-note">
+            Full list on <a href="https://scholar.google.com/citations?user=yYwEzOcAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>. 
+            * denotes equal contribution. Surname: <strong>Madondo</strong>.
+          </p>
+
+          <ol class="pub-list" reversed>
+            <li class="pub-item">
+              <span class="pub-year">2025</span>
+              <div class="pub-content">
+                <p class="pub-title">Patient-Specific Deep Reinforcement Learning for Automatic Replanning in Head-and-Neck Cancer Proton Therapy</p>
+                <p class="pub-authors"><strong>M. Madondo</strong>, Y. Shao, Y. Liu, J. Zhou, X. Yang, Z. Tian</p>
+                <p class="pub-venue">Machine Learning for Health Conference (MLHC 2025)</p>
+              </div>
+            </li>
+            <li class="pub-item">
+              <span class="pub-year">2025</span>
+              <div class="pub-content">
+                <p class="pub-title">ProtonRL: Patient-Specific Deep Reinforcement Learning Framework for Automatic Replanning in Proton Therapy for Head-and-Neck Cancer</p>
+                <p class="pub-authors"><strong>M. Madondo</strong>, C. Valdes, J. Zhou, M. McDonald, D. Yu, R. Weichselbaum, X. Yang, Z. Tian</p>
+                <p class="pub-venue">AAPM 2025 — Therapy Physics Scientific Session: AI in the Clinic</p>
+              </div>
+            </li>
+            <li class="pub-item">
+              <span class="pub-year">2025</span>
+              <div class="pub-content">
+                <p class="pub-title">Deep learning-based applicator selection between Syed and T&amp;O in high-dose-rate brachytherapy for locally advanced cervical cancer: a retrospective study</p>
+                <p class="pub-authors">R. Jiang, <strong>M. Madondo</strong>, X. Zhang, Y. Shao, M. Moradi, J. Sohn, T. Wu, X. Yang, Y. Hasan, Z. Tian</p>
+                <p class="pub-venue">Physics in Medicine and Biology (2025)</p>
+              </div>
+            </li>
+            <li class="pub-item">
+              <span class="pub-year">2025</span>
+              <div class="pub-content">
+                <p class="pub-title">Automated Treatment Planning for Interstitial HDR Brachytherapy for Locally Advanced Cervical Cancer using Deep Reinforcement Learning</p>
+                <p class="pub-authors">M. Moradi, R. Jiang, Y. Liu, <strong>M. Madondo</strong>, T. Wu, J. Sohn, X. Yang, Y. Hasan, Z. Tian</p>
+                <p class="pub-venue">arXiv:2506.11957 (2025)</p>
+              </div>
+            </li>
+            <li class="pub-item">
+              <span class="pub-year">2024</span>
+              <div class="pub-content">
+                <p class="pub-title">Forecasting land-based environmental variables using similarity analysis and temporal graph convoluational neural networks</p>
+                <p class="pub-authors">F. O'Donncha, <strong>M. Madondo</strong>, M. Azmat, M. Jacobs, R. Horesh</p>
+                <p class="pub-venue">US Patent US-20240112442-A1</p>
+              </div>
+            </li>
+            <li class="pub-item">
+              <span class="pub-year">2023</span>
+              <div class="pub-content">
+                <p class="pub-title">Learning Control Policies of Hodgkin-Huxley Neuronal Dynamics</p>
+                <p class="pub-authors"><strong>M. Madondo</strong>, D. Verma, L. Ruthotto, N. Au Yong</p>
+                <p class="pub-venue">Machine Learning for Health (ML4H) Findings Track, 2023</p>
+                <!-- <p class="pub-links"><a href="https://arxiv.org/abs/2311.07563" target="_blank" rel="noopener">arXiv</a></p> -->
+              </div>
+            </li>
+            <li class="pub-item">
+              <span class="pub-year">2023</span>
+              <div class="pub-content">
+                <p class="pub-title">A SWAT-based Reinforcement Learning Framework for Crop Management</p>
+                <p class="pub-authors"><strong>M. Madondo</strong>, M. Azmat, K. Dipietro, R. Horesh, M. Jacobs, A. Bawa, R. Srinivasan, F. O'Donncha</p>
+                <p class="pub-venue">AI for Social Good Workshop at AAAI (2023)</p>
+              </div>
+            </li>
+            <li class="pub-item">
+              <span class="pub-year">2022</span>
+              <div class="pub-content">
+                <p class="pub-title">Forecasting Soil Moisture Using Domain Inspired Temporal Graph Convolution Neural Networks</p>
+                <p class="pub-authors">M. Azmat, <strong>M. Madondo</strong>, K. Dipietro, R. Horesh, A. Bawa, M. Jacobs, R. Srinivasan, F. O'Donncha</p>
+                <p class="pub-venue">IJCAI-23 Special Track on AI for Good, pp. 5897-5905</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Honors -->
+      <section class="section fade-in" id="honors">
+        <h2 class="section-title">Selected Honors</h2>
+        <div class="section-body">
+          <div class="honors-list">
+            <div class="honor-item">
+              <span class="honor-year">2025</span>
+              <span>College of St. Scholastica — Alumni Board of Directors</span>
+            </div>
+            <div class="honor-item">
+              <span class="honor-year">2024</span>
+              <span>Co-inventor, US Patent US-20240112442-A1 (IBM Research)</span>
+            </div>
+            <div class="honor-item">
+              <span class="honor-year">2021</span>
+              <span>Google PhD Fellowship — Computational Neural &amp; Cognitive Sciences</span>
+            </div>
+            <div class="honor-item">
+              <span class="honor-year">2020</span>
+              <span>Science ATL Communication Fellow</span>
+            </div>
+            <div class="honor-item">
+              <span class="honor-year">2019</span>
+              <span>Webster Scholar (Honors) — The College of St. Scholastica</span>
+            </div>
+            <div class="honor-item">
+              <span class="honor-year">2017</span>
+              <span>Code2040 Tech Trek Fellow</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section fade-in" id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="section-body">
+          <div class="skills-group">
+            <div class="skill-category">
+              <h4>Languages &amp; Frameworks</h4>
+              <div class="skill-tags">
+                <span>Python</span><span>PyTorch</span><span>TensorFlow</span><span>MATLAB</span><span>Java</span><span>SQL</span><span>React</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>ML &amp; Scientific Computing</h4>
+              <div class="skill-tags">
+                <span>Deep RL</span><span>Neural Networks</span><span>LLM Fine-tuning</span><span>Optimal Control</span><span>Numerical Optimization</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Infrastructure</h4>
+              <div class="skill-tags">
+                <span>AWS</span><span>GCP</span><span>Linux</span><span>Git</span><span>CI/CD</span><span>APIs</span><span>Agile</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Mathematics</h4>
+              <div class="skill-tags">
+                <span>Optimal Control</span><span>Differential Equations</span><span>Dynamical Systems</span><span>Numerical Analysis</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>&copy; <span id="year"></span> Malvern Madondo</p>
+      </footer>
+    </div>
+
     <script src="./script.js"></script>
-      <!-- <p align="right"><font size="2">
-          <a href="https://cassidoo.co/">Adapted from Cassidy's old site!</a>
-          </font>
-        </p> -->
   </body>
 </html>
