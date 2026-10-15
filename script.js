@@ -5,93 +5,74 @@
 (function () {
   "use strict";
 
-  initDarkMode();
-  initScrollAnimations();
-  initPhotoSwap();
-})();
+  var root = document.documentElement;
 
-/* Set current year in footer */
-document.getElementById("year").textContent = new Date().getFullYear();
+  /* ---- Footer year ---- */
+  var yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-/* ---- Dark Mode ---- */
-function initDarkMode() {
-  const toggler = document.getElementById("toggler");
-  if (!toggler) return;
+  /* ---- Theme toggle (initial theme is set inline in <head>) ---- */
+  var toggle = document.getElementById("theme-toggle");
+  var media = window.matchMedia("(prefers-color-scheme: dark)");
 
-  // Respect system preference on first visit
-  const saved = localStorage.getItem("dark-mode");
-  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-  if (saved === "true" || (saved === null && prefersDark)) {
-    document.body.classList.add("dark-mode");
-    toggler.checked = true;
+  function setTheme(dark) {
+    if (dark) root.setAttribute("data-theme", "dark");
+    else root.removeAttribute("data-theme");
   }
 
-  toggler.addEventListener("change", (e) => {
-    const isDark = e.target.checked;
-    document.body.classList.toggle("dark-mode", isDark);
-    localStorage.setItem("dark-mode", isDark);
-  });
+  function savedTheme() {
+    try { return localStorage.getItem("theme"); } catch (e) { return null; }
+  }
 
-  // Listen for system changes
-  window
-    .matchMedia("(prefers-color-scheme: dark)")
-    .addEventListener("change", (e) => {
-      if (localStorage.getItem("dark-mode") === null) {
-        document.body.classList.toggle("dark-mode", e.matches);
-        toggler.checked = e.matches;
-      }
+  if (toggle) {
+    toggle.addEventListener("click", function () {
+      var dark = root.getAttribute("data-theme") !== "dark";
+      setTheme(dark);
+      try { localStorage.setItem("theme", dark ? "dark" : "light"); } catch (e) {}
     });
-}
-
-/* ---- Scroll Animations (IntersectionObserver) ---- */
-function initScrollAnimations() {
-  const elements = document.querySelectorAll(".fade-in");
-  if (!elements.length) return;
-
-  // If browser doesn't support IntersectionObserver, show everything
-  if (!("IntersectionObserver" in window)) {
-    elements.forEach((el) => el.classList.add("visible"));
-    return;
   }
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
+  // Follow system changes until the visitor picks a theme explicitly
+  if (media.addEventListener) {
+    media.addEventListener("change", function (e) {
+      if (!savedTheme()) setTheme(e.matches);
+    });
+  }
+
+  /* ---- Fade sections in on scroll ---- */
+  var items = document.querySelectorAll(".fade-in");
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (!("IntersectionObserver" in window) || reduceMotion) {
+    items.forEach(function (el) { el.classList.add("visible"); });
+  } else {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           entry.target.classList.add("visible");
           observer.unobserve(entry.target);
         }
       });
-    },
-    {
-      threshold: 0.1,
-      rootMargin: "0px 0px -40px 0px",
-    }
-  );
-
-  elements.forEach((el) => observer.observe(el));
-}
-
-/* ---- Subtle Photo Swap ---- */
-function initPhotoSwap() {
-  const img = document.getElementById("propic");
-  if (!img) return;
-
-  const photos = ["./img/face1.jpg", "./img/face2.jpg"];
-  let current = 0;
-
-  // smooth opacity transitions
-  img.style.transition = "opacity 0.3s ease";
-
-  function swap() {
-    current = (current + 1) % photos.length;
-    img.style.opacity = "0";
-    setTimeout(() => {
-      img.src = photos[current];
-      img.style.opacity = "1";
-    }, 300);
+    }, { threshold: 0.08, rootMargin: "0px 0px -40px 0px" });
+    items.forEach(function (el) { observer.observe(el); });
   }
 
-  setInterval(swap, 7000);
-}
+  /* ---- Gentle photo swap ---- */
+  var img = document.getElementById("propic");
+  if (img && !reduceMotion) {
+    var photos = ["./img/face1.jpg", "./img/face2.jpg"];
+    var i = 0;
+    // Preload the second photo so the swap doesn't flash
+    var pre = new Image();
+    pre.src = photos[1];
+
+    setInterval(function () {
+      i = (i + 1) % photos.length;
+      img.style.opacity = "0";
+      setTimeout(function () {
+        img.src = photos[i];
+        img.style.opacity = "1";
+      }, 400);
+    }, 8000);
+  }
+})();
